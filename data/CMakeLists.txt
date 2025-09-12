@@ -9,4 +9,6 @@ target_include_directories(data PUBLIC
 
 find_package(SQLite3 REQUIRED)
 
+target_link_libraries(data PUBLIC SQLite::SQLite3)
+
 target_compile_definitions(data PRIVATE DATA_EXPORTS)

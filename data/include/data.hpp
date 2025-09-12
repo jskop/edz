@@ -7,3 +7,4 @@
 #include <string>
 
 DATA_API int init_db(const std::string &db_path);
+DATA_API void close_db();

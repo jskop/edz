@@ -1,3 +1,5 @@
+file(GLOB_RECURSE SOURCES "*.cpp" "*.h")
+
 add_executable(ui
     src/main.cpp
 )
@@ -5,7 +7,8 @@ add_executable(ui
 target_include_directories(ui PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-if (WIN32)
+
+if (WIN32 AND NOT DEFINED Qt6_DIR)
     set(Qt6_DIR "C:/Qt/6.9.2/msvc2022_64/lib/cmake/Qt6")
 endif()
 
