@@ -9,11 +9,16 @@ class MainWindow : public QWidget {
 
 public:
   MainWindow();
+  ~MainWindow();
 private slots:
   void initDb();
+  void newStudent();
 
 private:
   QPushButton *initDbButton;
-  QLabel *initDbLabel;
+  QPushButton *newStudentButton;
+  QListWidget *studentsList;
+  bool connected;
+  void refreshList();
 };
 #endif
