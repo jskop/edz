@@ -6,3 +6,4 @@
 #include <string>
 
 LOGIC_API std::string app_version();
+LOGIC_API bool ensure_db_initialized(const std::string& path);

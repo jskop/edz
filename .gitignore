@@ -13,3 +13,8 @@ data.dir/
 ui.dir/
 logic.dir/
 .cache/
+bin/
+*.db
+Makefile
+ui_autogen/
+*.so

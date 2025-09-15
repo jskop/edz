@@ -1,5 +1,6 @@
 // Main window class
-#pragma once
+#ifndef  MAINWINDOW_H
+#define MAINWINDOW_H
 #include <QWidget>
 #include <QtWidgets>
 
@@ -13,5 +14,6 @@ private slots:
 
 private:
   QPushButton *initDbButton;
-
+  QLabel *initDbLabel;
 };
+#endif
