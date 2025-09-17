@@ -17,3 +17,4 @@ bin/
 Makefile
 ui_autogen/
 *.so
+*.ninja*
