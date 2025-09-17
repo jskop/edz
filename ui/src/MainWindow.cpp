@@ -10,7 +10,7 @@ MainWindow::MainWindow()
       newStudentButton(new QPushButton("New student", this)) {
 
   QVBoxLayout *mainLayout = new QVBoxLayout(this);
-  QHBoxLayout *buttonsLayout = new QHBoxLayout(this);
+  QHBoxLayout *buttonsLayout = new QHBoxLayout;
   mainLayout->addLayout(buttonsLayout);
   buttonsLayout->addWidget(initDbButton);
   buttonsLayout->addWidget(newStudentButton);
@@ -49,8 +49,8 @@ void MainWindow::newStudent() {
   auto inputDialog = new QDialog(this);
   inputDialog->setModal(true);
   auto mainLayout = new QVBoxLayout(inputDialog);
-  auto buttons = new QHBoxLayout(inputDialog);
-  auto inputGrid = new QGridLayout(inputDialog);
+  auto buttons = new QHBoxLayout;
+  auto inputGrid = new QGridLayout;
   mainLayout->addLayout(inputGrid);
   mainLayout->addLayout(buttons);
   auto cancelButton = new QPushButton(tr("&Cancel"), inputDialog);
